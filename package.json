@@ -1,0 +1,22 @@
+{
+  "name": "nhentai-viewer-static-server",
+  "version": "1.0.0",
+  "description": "nhentai viewer static host",
+  "main": "nvss.js",
+  "scripts": {
+    "test": "node nvss.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YabaiNyan/nhentai-viewer-static-server.git"
+  },
+  "author": "YabaiNyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YabaiNyan/nhentai-viewer-static-server/issues"
+  },
+  "homepage": "https://github.com/YabaiNyan/nhentai-viewer-static-server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
