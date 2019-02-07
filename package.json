@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/YabaiNyan/nhentai-viewer-static-server#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nhentai-js": "^1.4.0"
   }
 }
