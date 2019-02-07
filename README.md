@@ -8,28 +8,25 @@ Installation
 3) Create a ```.env``` file inside the folder with ```PORT=(port)``` inside, replacing (port) your desired port (default port is 80).
 4) To start, run ```node nvss.js``` or ```npm test```
 
+Usage
+=====
+Navigate to Note on setup `(server):(port)/(nhentai book id)` on a browser of your choice
+
 Note on setup
 =====
-The assumed setup is a nginx redirect setup; with /nh/ pointing to root of (nhentai-json-http-server)[https://github.com/YabaiNyan/nhentai-json-http-server] and /g/ pointing to root of (nhentai-viewer-static-server)[https://github.com/YabaiNyan/nhentai-viewer-static-server]
+You can have the server setup up so that you directly change `nhentai.net` to your server/domain name by using nginx to forward `/g/` to nvss.js
 
-Example nginx setup
+Example nginx setup (completely optional)
 =====
 ```
 server {
     root /var/www/html
 
-    location /nh/ {
-        proxy_set_header X-Real-IP  $remote_addr;
-        proxy_set_header X-Forwarded-For $remote_addr;
-        proxy_set_header Host $host;
-        proxy_pass http://localhost:8080/;
-    }
-
     location /g/ {
         proxy_set_header X-Real-IP  $remote_addr;
         proxy_set_header X-Forwarded-For $remote_addr;
         proxy_set_header Host $host;
-        proxy_pass http://localhost:8181/;
+        proxy_pass http://localhost:8080/;
     }
 
     location / {
