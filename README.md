@@ -10,7 +10,7 @@ Installation
 
 Usage
 =====
-Navigate to Note on setup `(server):(port)/(nhentai book id)` on a browser of your choice
+Navigate to `(server):(port)/(nhentai book id)` on a browser of your choice
 
 Note on setup
 =====
